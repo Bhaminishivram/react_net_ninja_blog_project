@@ -14,7 +14,7 @@ function App() {
      <Navbar/>
         <div className="content">   
             <HomePage/>
-            <h1>App Components</h1>
+           
        
        
        
