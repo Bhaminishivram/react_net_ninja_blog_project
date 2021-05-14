@@ -11,8 +11,8 @@ function App() {
   return ( 
 
     <div className="App"> 
-     <Navbar/>
-        <div className="content">   
+       <Navbar/>
+         <div className="content">   
             <HomePage/>
            
        
@@ -29,7 +29,7 @@ function App() {
         <p> {"hello , prashantha"}</p>
         {/* <p>{person}</p> 
         
-     <p>{ "hello , prashantha" }</p> 
+        <p>{ "hello , prashantha" }</p> 
         <p>{ [1,23,4,5,6] }</p> 
         <p>{Math.random() * 10}</p>  
         <a href={links} >Google Site</a>    */} 
