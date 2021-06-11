@@ -1,33 +1,50 @@
-import React from 'react'; 
-const HomePage = () => { 
+import { useState } from 'react';
+import React from 'react';
 
-     const handleClick   = (e) => {
-         console.log("Hello , ninjas", e);
-     }
-       const handleClickAgain =(name, e) =>{
-         console.log("Hello" + name, e.target.value);
-       }
-    return ( 
-        <div className="home">
-          <h1> Home Page forever</h1> 
-           <button onClick={handleClick}>Click me</button>  
-          {/* <button onClick={handleClick()}>Click me</button> */}
-          {/* <button onClick={handleClickAgain('Bhamini')}>Click me Again</button> */}  
+const HomePage = () => {  
+ // let name ="Bhamu"; 
+ 
+   const[name,setName]=useState('Bhamu');
+   const[age ,setAge] = useState(23);
+  // const handleClick = (e) => {
+  //   console.log("Hello , ninjas", e);
+  // }
+  // const handleClickAgain = (name, e) => {
+  //   console.log("Hello" + name, e.target.value);
+  // } 
 
-          {/* using Arrow function in onClick Event button  */}
-          {/* <button onClick={() => { 
+  const handleClick =() => { 
+    setName('Ramu');
+    setAge(40);
+      //  name = " Ramu"; 
+      //  console.log(name);
+  }
+  return (
+    <div className="home">
+      <h1> Home Page forever</h1> 
+      <p>{name} is {age} years old</p>
+      <button onClick={handleClick}>Click me</button>
+      {/* <button onClick={handleClick()}>Click me</button> */}
+      {/* <button onClick={handleClickAgain('Bhamini')}>Click me Again</button> */}
+
+      {/* using Arrow function in onClick Event button  */}
+      {/* <button onClick={() => { 
             handleClickAgain(" Prashantha")
           }}>
         Click me Again 
+          </button> */}
+
+      {/* <button onClick={(e) =>
+        handleClickAgain(" Prashantha", e)
+      }>
+        Click me Again
           </button> */} 
 
-<button onClick={(e) => 
-            handleClickAgain(" Prashantha", e)
-          }>
-        Click me Again 
-          </button>
-        </div>
-      );
+          {/* <button onClick ={handleClick()}>
+             Click me
+          </button> */}
+    </div>
+  );
 }
- 
+
 export default HomePage;
