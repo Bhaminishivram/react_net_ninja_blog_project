@@ -14,14 +14,7 @@ function App() {
       <Navbar />
       <div className="content">
         <HomePage />
-
-
-
-
-
-
-
-
+        
         {/* 
         <h2>{title}</h2> 
         <p>Liked {likes} times</p>  

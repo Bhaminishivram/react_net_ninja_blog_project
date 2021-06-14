@@ -41,4 +41,20 @@
    max-width: 600px; 
    margin:40px auto; 
    padding: 20px;
+}  
+
+/* blog previews /list */ 
+.blog-preview {
+  padding:10px 16px;
+  margin:20px 0;
+  border-bottom:1px soild #1f1717;
+
 } 
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px  peru; 
+} 
+.blog-preview h2{
+   font-size: 20px;
+   color:rgb(59, 8, 59); 
+   margin-bottom: 8px;
+}
