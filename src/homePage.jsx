@@ -25,12 +25,21 @@ import BlogList from './BlogList';
    const[blogs,setBlogs] = useState([
     { title:'My new website', body:'loream mjfhgig....', author:'mario',id:1 },
     {title:'welcome Party', body:'lorem ipsum....',author:'bhamini',id:2},
-    {title:'webdev top tips', body:'dvnjdnv tryet....', author:'Laxshmish',id:3} 
-
+    {title:'webdev top tips', body:'dvnjdnv tryet....', author:'Laxshmish',id:8} ,
+    {title:'webdev top books', body:'ndlvnldvjo....', author:'bhamini',id:4} ,
+    {title:'webdevelopment', body:'nscjnjndvv....', author:'Laxshmish',id:5}, 
+    {title:'web designer', body:'fjeegoegir....', author:'bhamini',id:6} ,
+    {title:'webdev tool kit', body:'kcdjfodjojg....', author:'mario',id:7} 
+    
+    
   ]);
   return (
     <div className="home">   
-      <BlogList blogs={blogs} title="All Blogs" />
+      <BlogList blogs={blogs} title="All Blogs !" /> 
+      {/* filter */} 
+      <BlogList 
+            blogs={blogs.filter((blog) =>blog.author==='bhamini')} 
+            title="Bhamini Blogs" />
 
       {/* <h1> Home Page forever</h1> 
       <p>{name} is {age} years old</p>
